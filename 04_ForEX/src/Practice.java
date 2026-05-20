@@ -76,6 +76,13 @@ public class Practice {
     // 6. 정수형 변수 n을 이용하여 n!(팩토리얼) 값을 구하세요.
     // n은 1 ~ 20 사이의 값을 가져야 합니다. 값은 스스로 정하세요.
     // 만약, 20 초과되는 값을 사용하면 기본 타입을 이용해 결과 값을 저장할 수 없습니다.
+    int n = 10;
+    int result = 1;
+    for (int i = 1; i <= n; i++) {
+      result *= i;
+    }
+    System.out.println("");
+    System.out.println(result);
 
     // 7. 전체 구구단을 세로 방향으로 출력하세요.
     // [출력 예시]
@@ -83,6 +90,12 @@ public class Practice {
     // 2x2=4
     // ...
     // 9x9=81
+    for (int i = 2; i < 10; i++) {
+      for (int j = 1; j < 10; j++) {
+        System.out.print(i + "x" + j + "=" + i * j);
+        System.out.println("");
+      }
+    }
 
     // 8. 전체 구구단을 가로 방향으로 출력하세요.
     // [출력 예시]
@@ -91,6 +104,13 @@ public class Practice {
     // ...
     // 2x9=18 3x9=27 ... 9x9=81
 
+    for (int i = 1; i < 10; i++) {
+      for (int j = 1; j < 10; j++) {
+        System.out.print(i + "x" + j + "=" + i * j);
+        System.out.print(" ");
+      }
+      System.out.println("");
+    }
     // 9. 별(*)을 반복하여 출력하여 피라미드 모양을 만들어 출력하세요. for문을 사용하세요.
     // [출력 예시]
     // *
@@ -98,7 +118,12 @@ public class Practice {
     // ***
     // ****
     // *****
-
+    for (int i = 0; i < 7; i++) {
+      for (int j = 0; j < i; j++) {
+        System.out.print('*');
+      }
+      System.out.println();
+    }
     // 10. 별(*)을 반복하여 출력하여 역피라미드 모양을 만들어 출력하세요. for문을 사용하세요.
     // [출력 예시]
     // *****
@@ -106,5 +131,11 @@ public class Practice {
     // ***
     // **
     // *
+    for (int i = 6; i > 0; i--) {
+      for (int j = 0; j < i; j++) {
+        System.out.print('*');
+      }
+      System.out.println();
+    }
   }
 }
