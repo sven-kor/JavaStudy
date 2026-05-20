@@ -40,9 +40,9 @@ public class ArrayEx {
 
     //배열의 길이는 수정불가 -> 배열 길이 늘리기는 : 새 배열 만들어서 이사시키기
     String[] names = {"김철수", "홍길동"};
-    String[] newArray = new String[5];
-    System.arraycopy(names, 0, newArray, 0, names.length);
-    names = newArray;
+    String[] namesBig = new String[5];
+    System.arraycopy(names, 0, namesBig, 0, names.length);
+    names = namesBig;
     System.out.println(Arrays.toString(names));
   }
 }
