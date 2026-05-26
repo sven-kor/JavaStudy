@@ -23,6 +23,7 @@ public class Main {
         e.printStackTrace();
       } catch (InputMismatchException e) {
         System.out.println("정수만 입력할 수 있습니다.");
+        sc.nextLine();
       } finally {
         System.out.println("다시 입력하세요.");
       }
